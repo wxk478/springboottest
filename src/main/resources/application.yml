@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_test?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 90610161215
+  jpa:
+    show-sql: true
+server:
+  port: 1215
+pagehelper:
+      helperDialect: mysql
+      reasonable: true  
+      supportMethodsArguments: true   
+      pageSizeZero: true    
+      params: count=countSql
+#pagehelper:
+#  helperdialect: mysql
+#  reasonabele: true
+#  supportMethodsArguments: true
+#  pageSizeZero: true
+#  params: count=countSql
